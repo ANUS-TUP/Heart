@@ -1,5 +1,5 @@
 {
-  "model_name": "Gradient Boosting Classifier",
+  "model_name": "Random Forest Classifier",
   "features": [
     "age",
     "sex",
@@ -48,36 +48,37 @@
     "reversible_def",
     "asymptomatic_cp"
   ],
-  "accuracy": 0.7645,
-  "roc_auc": 0.8437,
-  "f1_score": 0.7942,
-  "decision_threshold": 0.44,
+  "accuracy": 0.751,
+  "roc_auc": 0.8316,
+  "f1_score": 0.7757,
+  "decision_threshold": 0.45,
   "confusion_matrix": [
     [
-      620,
-      298
+      641,
+      277
     ],
     [
-      173,
-      909
+      221,
+      861
     ]
   ],
   "feature_importances": {
-    "age": 0.026744,
-    "sex": 0.032766,
-    "cp": 0.076102,
-    "trestbps": 0.054812,
-    "chol": 0.059197,
-    "fbs": 0.003101,
-    "restecg": 0.003457,
-    "thalach": 0.029327,
-    "exang": 0.034156,
-    "oldpeak": 0.027117,
-    "slope": 0.004657,
-    "ca": 0.050234,
-    "thal": 0.042188
+    "age": 0.049273,
+    "sex": 0.013836,
+    "cp": 0.082981,
+    "trestbps": 0.031804,
+    "chol": 0.029059,
+    "fbs": 0.00132,
+    "restecg": 0.002409,
+    "thalach": 0.030875,
+    "exang": 0.043861,
+    "oldpeak": 0.02791,
+    "slope": 0.004347,
+    "ca": 0.046366,
+    "thal": 0.047385
   },
   "train_samples": 8000,
   "test_samples": 2000,
-  "disease_prevalence": 0.541
+  "disease_prevalence": 0.541,
+  "sklearn_version": "1.4.2"
 }
